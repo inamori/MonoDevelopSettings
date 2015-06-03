@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeTemplates version="3.0">
+  <CodeTemplate version="2.0">
+    <Header>
+      <_Group>C#</_Group>
+      <Version />
+      <MimeType />
+      <Shortcut>singl</Shortcut>
+      <_Description />
+      <TemplateType>Unknown</TemplateType>
+    </Header>
+    <Variables>
+      <Variable name="class">
+        <Default>notset</Default>
+      </Variable>
+    </Variables>
+    <Code><![CDATA[// Singleton
+private static $class$ _instance;
+public static $class$ instance {
+	get {
+		if (_instance == null) {
+			_instance = FindObjectOfType<$class$> ();
+		}
+		return _instance;
+	}
+} ]]></Code>
+  </CodeTemplate>
+</CodeTemplates>

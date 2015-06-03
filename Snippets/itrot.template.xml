@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeTemplates version="3.0">
+  <CodeTemplate version="2.0">
+    <Header>
+      <_Group>C#</_Group>
+      <Version />
+      <MimeType>text/x-csharp</MimeType>
+      <Shortcut>itrot</Shortcut>
+      <_Description />
+      <TemplateType>Unknown</TemplateType>
+    </Header>
+    <Variables>
+      <Variable name="target">
+        <Default>notset</Default>
+      </Variable>
+      <Variable name="x">
+        <Default>0</Default>
+      </Variable>
+      <Variable name="y">
+        <Default>0</Default>
+      </Variable>
+      <Variable name="z">
+        <Default>0</Default>
+      </Variable>
+      <Variable name="time">
+        <Default>1</Default>
+      </Variable>
+    </Variables>
+    <Code><![CDATA[iTween.RotateTo($target$, iTween.Hash("islocal", true, "time", $time$, "rotation", new Vector3($x$f, $y$f, $z$f), "easetype", iTween.EaseType.linear));]]></Code>
+  </CodeTemplate>
+</CodeTemplates>

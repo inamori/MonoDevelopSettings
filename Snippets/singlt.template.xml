@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeTemplates version="3.0">
+  <CodeTemplate version="2.0">
+    <Header>
+      <_Group>C#</_Group>
+      <Version />
+      <MimeType>text/x-csharp</MimeType>
+      <Shortcut>singlt</Shortcut>
+      <_Description>シングルトン生成</_Description>
+      <TemplateType>Expansion</TemplateType>
+    </Header>
+    <Variables>
+      <Variable name="classname" isEditable="false">
+        <Function>GetCurrentClassName()</Function>
+      </Variable>
+    </Variables>
+    <Code><![CDATA[// Singleton
+private static $classname$ _instance;
+public static $classname$ instance {
+	get {
+		if (_instance == null) {
+			_instance = FindObjectOfType<$classname$> ();
+		}
+		return _instance;
+	}
+}]]></Code>
+  </CodeTemplate>
+</CodeTemplates>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeTemplates version="3.0">
+  <CodeTemplate version="2.0">
+    <Header>
+      <_Group>C#</_Group>
+      <Version>1.0</Version>
+      <MimeType>text/x-csharp</MimeType>
+      <Shortcut>namespace</Shortcut>
+      <_Description>Template for namespace</_Description>
+      <TemplateType>Expansion, SurroundsWith</TemplateType>
+    </Header>
+    <Variables>
+      <Variable name="name" isIdentifier="true">
+        <Default>MyNamespace</Default>
+        <_ToolTip>Namespace name</_ToolTip>
+      </Variable>
+    </Variables>
+    <Code><![CDATA[namespace $name$ {
+	$selected$$end$
+}]]></Code>
+  </CodeTemplate>
+</CodeTemplates>
